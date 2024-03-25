@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetFlix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="netflix.jpeg" class="nav-avtar" alt="">
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <img src="login.jpeg" class="nav-avtar" alt="">
+        </div>
+    </div>
+
+    <header id="banner">
+        <div class="banner-content">
+            <h1 id="banner-title"></h1>
+            <div id="banner-buttons">
+                <button id="banner-button">Play</button>
+                <button id="banner-button">My List</button>
+            </div>
+            <p id="banner-desc"></p>
+        </div>
+        <div id="banner-fade"></div>
+    </header>
+
+
+    <div id="head">
+        <div class="row">
+            <h2 class="row-title"></h2>
+            <p class="row-poster"></p>
+        </div>
+    </div>
+
+    <script src="clone.js"></script>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            var nav= document.querySelector(".nav");
+            nav.classList.toggle("active",window.scrollY >0);
+        })
+    </script>
+</body>
+</html>
